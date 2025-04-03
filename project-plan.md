@@ -536,6 +536,15 @@ I'll help you plan your appointment scheduler application for local entrepreneur
 
 
 
+## Running the project
+$ npm start
+```
+
+### http://localhost:3000 to access the appointment scheduler site
+
+
+![img.png](img.png)
+
 
 
 
