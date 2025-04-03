@@ -547,7 +547,96 @@ $ npm start
 
 
 
+### Recommended code to be integerate with the Python backend
+``
+async confirmBooking() {
+    try {
+        const bookingData = {
+            service_id: this.selectedService.id,
+            date: this.selectedDate,
+            time: this.selectedTime,
+            client_info: {
+                first_name: this.personalInfo.firstName,
+                last_name: this.personalInfo.lastName,
+                email: this.personalInfo.email,
+                phone: this.personalInfo.phone,
+                notes: this.personalInfo.notes
+            },
+            payment_info: {
+                // In a real app, use a secure payment processor
+                // Don't send full card details directly
+                card_last_four: this.paymentInfo.cardNumber.slice(-4)
+            }
+        };
+        
+        const response = await fetch('/api/bookings', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(bookingData)
+        });
+        
+        if (!response.ok) {
+            throw new Error('Failed to create booking');
+        }
+        
+        const result = await response.json();
+        
+        // Show confirmation
+        this.bookingId = result.booking_id;
+        this.currentStep = 5;
+    } catch (error) {
+        console.error('Error submitting booking:', error);
+        alert('There was an error processing your booking. Please try again.');
+    }
+}
 
+
+
+###  Prompt to create business owners dashboard
+```
+Based on my project specifications, create a business owner dashboard that includes the following:
+1.	Financial Metrics: Revenue and Expenses, Profit Margins, Cash Flow, and Sale Trends
+2.	Customer Insights: Customer Retention Rate, Customer feedback, Loyalty program Metrics
+3.	Operational metrics: inventory levels, appointment scheduling, and staff performance.
+4.	Marketing metrics: social media Engagement, Website Traffic, and Campaign ROI
+5.	Industry-Specific Metrics: service Time, Menu or Service Popularity
+6.	Alerts and Notifications: Low Inventory Alerts, Upcoming Appointments, and Payment Reminders.
+This business owners’ dashboard will popup when the “For Business Owners” is clicked on landing page.
+
+
+
+### Prompt to Generate a signup page
+
+Based on my project specifications, create a sign-up page that allow to sign up as business owner, system administrator, or customer or client. Business on the visitor or user selection, the required information should change relevant to business owner, system admin or regular customer or client.
+But in general, each register should provide the following information: 
+Basic Information
+•	Full Name: First and last name for identification.
+•	Email Address: A valid email for communication and account verification.
+•	Phone Number: Optional but useful for direct contact.
+Account Details
+•	Username: A unique identifier for the user.
+•	Password: Ensure strong password requirements for security.
+•	Confirm Password: To avoid errors during account creation.
+Business Information (if applicable)
+•	Company Name: For business-related CRM platforms.
+•	Role/Position: Helps tailor the CRM experience.
+•	Industry Type: Useful for segmentation and analytics.
+Preferences and Permissions
+•	Communication Preferences: Opt-in for newsletters or updates.
+•	Terms and Conditions: Checkbox for agreement to policies.
+•	Privacy Policy: Link to the privacy statement.
+Security Features
+•	Captcha or reCAPTCHA: To prevent spam or bots.
+•	Two-Factor Authentication (2FA): Optional for added security.
+Additional Fields (Optional)
+•	Referral Code: If applicable, for tracking referrals.
+•	Custom Questions: Tailored to the platform's needs.
+User Experience Enhancements
+•	Progress Indicator: For multi-step forms.
+•	Error Messages: Clear and helpful prompts for invalid inputs.
+•	Mobile-Friendly Design: Ensure compatibility with all devices.
 
 
 
