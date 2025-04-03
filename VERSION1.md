@@ -46,31 +46,30 @@
 
 
 
-4. **Screenshots of your completed front-End:** starting with landing page, management portal, & main pages, and service management page. 
+## 4. **Screenshots of your completed front-End:** starting with landing page, management portal, & main pages, and service management page. 
 ### 1. Landing page:
 ![images/img_3.png](images/img_3.png)
 
-2. Business Dashboard:
+### 2. Business Dashboard:
 ![images/img_5.png](images/img_5.png)
 
-3. Book an Appointment: 
+### 3. Book an Appointment: 
 ![images/img_4.png](images/img_4.png)
 
-
-4. Sign up options
+### 4. Sign up options
 ![images/img_6.png](images/img_6.png)
 
-5. Sign up as a Customer or Client
+### 5. Sign up as a Customer or Client
 ![images/img_7.png](images/img_7.png)
 
-6. Sign up as a Business Owner
+### 6. Sign up as a Business Owner
 ![images/img_8.png](images/img_8.png)
 
-7. Professional Login page:
+### 7. Professional Login page:
 ![images/img_9.png](images/img_9.png)
 
    
-5. **What you learned about prompt engineering?:** 
+## 5. **What you learned about prompt engineering?:** 
 		1. Optimizing AI outputs
 		2. Enhanced Creativity
 		3. Efficiency in Communication
