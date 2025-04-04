@@ -42,7 +42,7 @@
    1. Integrating AI outputs into existing workflows
    2. Blind prompting leading to unexpected results
    3. Ensuring ethical use of AI-generated content
-   4. Customizing pages to meet specific needs
+   4. Customizing pages to meet specific ne
 
 
 
@@ -67,6 +67,15 @@
 
 ### 7. Professional Login page:
 ![images/img_9.png](images/img_9.png)
+
+
+### 8. Testing responsiveness: Desktop/Web browsers, Tables & Mobiles
+#### Mobile view:
+
+![images/img.png](img.png)
+
+#### Tablet view:
+![images/img_1.png](img_1.png)
 
    
 ## 5. **What you learned about prompt engineering?:** 
