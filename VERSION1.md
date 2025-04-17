@@ -77,7 +77,11 @@
 #### Tablet view:
 ![images/img_1.png](img_1.png)
 
-   
+
+#### Responsiveness Testing of UI:
+![images/img_3.png](img_3.png)
+
+
 ## 5. **What you learned about prompt engineering?:** 
 		1. Optimizing AI outputs
 		2. Enhanced Creativity
