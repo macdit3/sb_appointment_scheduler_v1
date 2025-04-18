@@ -78,7 +78,7 @@
 ![images/img_1.png](img_1.png)
 
 
-#### Responsiveness Testing of UI:
+#### Responsiveness Testing of the Landing Page UI:
 ![images/img_3.png](img_3.png)
 
 
